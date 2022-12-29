@@ -18,6 +18,8 @@ app.get("/users", (req, res) => {
   ]);
 });
 
-app.listen(3000, () => {
-  console.log("server is up");
+const PORT = 3000;
+
+app.listen(PORT, () => {
+  console.log(`server is up on port ${PORT}`);
 });
