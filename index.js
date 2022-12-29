@@ -2,6 +2,8 @@ console.log("starting up");
 const express = require("express");
 const app = express();
 
+app.use(express.static('public'));
+
 app.get("/", (req, res) => {
   console.log("/route requested");
   res.send("<h1>HOME</h1><div>hello world</div>");
